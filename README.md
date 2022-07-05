@@ -45,14 +45,12 @@ Below is an example of what a single song file, **TRAABJL12903CDCF1A.json**, loo
 In addition to the data files, the project workspace includes 5 files:
 
 **1. dl.cfg**                    Contains the Secret Key for ASW access<br>
-**2. create_bucket.py**          Create bucket in AWS S3 to store the extracted dimentional tables.<br>
-**3. etl.py**                    Loading song data and log data from S3 to Spark, transforms data into a set of dimensional tables, then save the table back to S3 <br>
-**4. etl.ipynb**                 Used to design ETL pipelines <br>
-**5. README.md**                 Provides project info<br>
+**2. etl.py**                    Loading song data and log data from S3 to Spark, transforms data into a set of dimensional tables, then save the table back to S3 <br>
+**3. README.md**                 Provides project info<br>
 
 ## Configuration
 
-Remember to set key and secret in **./aws/dl.cfg** before run **etl.py**<br>
+Remember to set key and secret in **./dl.cfg** before run **etl.py**<br>
 
 [AWS]<br>
 key = <br>
